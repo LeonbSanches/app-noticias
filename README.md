@@ -1,7 +1,7 @@
-**APPNOTICE**
+## **APPNOTICE**
 
-Um aplicativo simples de notícias com o objetivo principal de ampliar o conhecimento prático em consumo e integração de APIs, aprimorar conceitos de UX (User Experience), aplicar boas práticas de organização e melhoria de código, e implementar testes para garantir qualidade e confiabilidade.
-O projeto servirá como um ambiente de aprendizado contínuo, permitindo experimentar arquiteturas, padrões de desenvolvimento, versionamento de código e estratégias de testes, ao mesmo tempo em que entrega uma interface intuitiva e funcional para acesso a notícias.
+ Um aplicativo simples de notícias com o objetivo principal de ampliar o conhecimento prático em consumo e integração de APIs, aprimorar conceitos de UX (User Experience), aplicar boas práticas de organização e melhoria de código, e implementar testes para garantir qualidade e confiabilidade.
+O projeto servirá como um ambiente de aprendizado contínuo, permitindo experimentar arquiteturas, padrões de desenvolvimento, versionamento de código e estratégias de testes, ao mesmo tempo em que entrega uma interface intuitiva e funcional para acesso a notícias e opensorce.
 
     AppNotice/
     ├── AppNoticeApp.swift        # Entry point da aplicação (@main)
@@ -22,8 +22,8 @@ O projeto servirá como um ambiente de aprendizado contínuo, permitindo experim
     └── Services/                 # Camada de Serviços / Infraestrutura
         ├── APIClient.swift
 
-**Padrão Arquitetural
-        MVVM (Model-View-ViewModel)
+## Padrão Arquitetural
+  MVVM (Model-View-ViewModel)
         
   🔄 Fluxo de Dados
         User Interaction
