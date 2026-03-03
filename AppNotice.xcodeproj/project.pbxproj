@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0904C9A42F4CAEB600C20339 /* AppNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D23A0F2F5748D9002DFFC4 /* AppNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0904C9A62F4CAEB600C20339 /* AppNotice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AppNotice;
+			sourceTree = "<group>";
+		};
+		0904CB7C2F4F5DA000C20339 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0904CB7D2F4F5DA600C20339 /* Service */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0904CB7E2F4F5DB000C20339 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+		0904CB7F2F4F5DBA00C20339 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09D23A252F575150002DFFC4 /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +58,13 @@
 			isa = PBXGroup;
 			children = (
 				0904C9A62F4CAEB600C20339 /* AppNotice */,
-				0904C9A52F4CAEB600C20339 /* Products */,
+				0904CB7F2F4F5DBA00C20339 /* ViewModels */,
+				0904CB7E2F4F5DB000C20339 /* View */,
+				0904CB7D2F4F5DA600C20339 /* Service */,
+				09D23A252F575150002DFFC4 /* Components */,
+				0904CB7C2F4F5DA000C20339 /* Models */,
+				09D23A0F2F5748D9002DFFC4 /* AppNotice.app */,
 			);
-			sourceTree = "<group>";
-		};
-		0904C9A52F4CAEB600C20339 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0904C9A42F4CAEB600C20339 /* AppNotice.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,12 +84,17 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0904C9A62F4CAEB600C20339 /* AppNotice */,
+				0904CB7C2F4F5DA000C20339 /* Models */,
+				0904CB7D2F4F5DA600C20339 /* Service */,
+				0904CB7E2F4F5DB000C20339 /* View */,
+				0904CB7F2F4F5DBA00C20339 /* ViewModels */,
+				09D23A252F575150002DFFC4 /* Components */,
 			);
 			name = AppNotice;
 			packageProductDependencies = (
 			);
 			productName = AppNotice;
-			productReference = 0904C9A42F4CAEB600C20339 /* AppNotice.app */;
+			productReference = 09D23A0F2F5748D9002DFFC4 /* AppNotice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +122,7 @@
 			mainGroup = 0904C99B2F4CAEB600C20339;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 0904C9A52F4CAEB600C20339 /* Products */;
+			productRefGroup = 0904C99B2F4CAEB600C20339;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
