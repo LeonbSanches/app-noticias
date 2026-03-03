@@ -69,6 +69,15 @@ Executa lógica de apresentação
   Comunicação com API
   Persistência local
   Regras externas
-        
-    
-    
+
+
+
+## CONTEÚDOS PARA APROFUNDAMENNTO 
+
+  https://www.youtube.com/watch?v=0IEQtsnjPko
+  
+  https://www.youtube.com/watch?v=mS6Tj1I9Gto&list=PLs5gUvDGMKI9Agz8e0C7WN6fPSq6vhv3w&index=12
+  
+   https://www.youtube.com/watch?v=X9Tfc7zsSGg&t=501s
+  
+   https://www.youtube.com/watch?v=6FSd13LXB10
