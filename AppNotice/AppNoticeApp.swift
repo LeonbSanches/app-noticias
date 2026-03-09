@@ -11,8 +11,7 @@ import SwiftUI
 struct AppNoticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            SwiftUIView()        }
     }
 }
  
