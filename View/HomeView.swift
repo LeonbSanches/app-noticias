@@ -1,26 +1,47 @@
-//
-//  HomeView.swift
-//  AppNotice
-//
-//  Created by CPINfo on 03/03/26.
-//
-
 import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeModelView()
     @State private var searchText: String = ""
     
+    // Mapeamento de categoria para ícone SF Symbols
+    private let categoryIcons: [String: String] = [
+        "business": "briefcase",
+        "entertainment": "tv",
+        "general": "globe",
+        "health": "heart",
+        "science": "atom",
+        "sports": "sportscourt",
+        "technology": "desktopcomputer"
+    ]
+    
     var body: some View {
         NavigationView {
             VStack {
-                Picker("Categoria", selection: $viewModel.selectedCategory) {
-                    ForEach(viewModel.categories, id: \.self) { category in
-                        Text(category.capitalized).tag(category)
+                // Barra de filtro horizontal com ícones
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 16) {
+                        ForEach(viewModel.categories, id: \.self) { category in
+                            Button(action: {
+                                viewModel.selectedCategory = category
+                            }) {
+                                VStack(spacing: 4) {
+                                    Image(systemName: categoryIcons[category, default: "questionmark.circle"])
+                                        .font(.title2)
+                                        .foregroundColor(viewModel.selectedCategory == category ? .white : .accentColor)
+                                        .padding(8)
+                                        .background(viewModel.selectedCategory == category ? Color.accentColor : Color(.systemGray5))
+                                        .clipShape(Circle())
+                                    Text(category.capitalized)
+                                        .font(.caption)
+                                        .foregroundColor(viewModel.selectedCategory == category ? .accentColor : .primary)
+                                }
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
                     }
+                    .padding([.horizontal, .top])
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding([.horizontal, .top])
                 TextField("Pesquisar...", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding([.horizontal, .bottom])
@@ -92,3 +113,4 @@ struct HomeView: View {
 #Preview {
     HomeView()
 }
+
